@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Fugaz+One&family=Russo+One&family=Suez+One&display=swap');
+.todo-app{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to top, #ccc, black);
+    padding-top: 100px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+    display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-title{
+    text-align: center;
+    font-family: courier;
+    padding: 5px;
+    border-radius: 50px;
+    color: orangered;
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
+    margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-input{
+    width: 70%;
+    height: 40px;
+    border: 3px solid coral;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-btn{
+    width: 25%;
+    height: 48px;
+    border: 3px solid coral;
+    margin-left: 5px;
+    border-radius: 10px;
+    transition: .3s;
+    color: coral;
+    font-size: 16px;
+    font-family: 'Russo One', sans-serif;
+    box-sizing: border-box;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-btn:hover{
+    background-color: rgb(133, 133, 133);
+    cursor: pointer;
+    transition: .2s;
+}
+.todo-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0;
+    /* list-style: none; */
+}
+.todo-list-inner{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.todo-list-item{
+    font-size: 20px;
+    color: gold;
+    font-family: 'Suez One', serif;
+    font-family: 'Fugaz One', cursive;
+    padding: 10px;
+}
+.todo-list-btn{
+    width: 70px;
+    height: 30px;
+    border: 2px solid coral;
+    margin-left: 5px;
+    border-radius: 10px;
+    transition: .3s;
+    color: coral;
+    font-size: 16px;
+    font-family: 'Russo One', sans-serif;
+    box-sizing: border-box;
+}
+.todo-list-btn:hover{
+    background-color: rgb(133, 133, 133);
+    cursor: pointer;
+    transition: .2s;
+}
+@media only screen and (max-width: 450px) {
+    .todo-list{
+        width: 80%;
+    }
+    .todo-list-inner{
+        width: 90%;
+    }
 }
